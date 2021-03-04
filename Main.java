@@ -7,8 +7,13 @@ class Main {
     //System.out.println(f.solution("17"));
     //System.out.println(f.getResult("011"));
 
-    Carpet c = new Carpet();
-    System.out.println(c.solution(16, 9));
+    //Carpet c = new Carpet();
+    //System.out.println(c.solution(16, 9));
+
+    Sportsware s = new Sportsware();
+    int[] lost = {2, 6};
+    int[] reserve = {2, 6};//{1, 3, 5};
+    System.out.println(s.solution(7, lost, reserve));
     
   }
 }
