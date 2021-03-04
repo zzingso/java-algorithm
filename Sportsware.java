@@ -9,7 +9,6 @@ class Sportsware {
   public int solution(int n, int[] lost, int[] reserve) {
     int answer = n - lost.length;
 
-    List<Integer> resultList = new ArrayList<Integer>(Collections.nCopies(n, 0));
     List<Integer> lostList = Arrays.stream(lost).boxed().collect(Collectors.toList());
     List<Integer> reserveList = Arrays.stream(reserve).boxed().collect(Collectors.toList());
 
