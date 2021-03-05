@@ -10,10 +10,14 @@ class Main {
     //Carpet c = new Carpet();
     //System.out.println(c.solution(16, 9));
 
-    Sportsware s = new Sportsware();
-    int[] lost = {2, 6};
-    int[] reserve = {2, 6};//{1, 3, 5};
-    System.out.println(s.solution(7, lost, reserve));
+    // Sportsware s = new Sportsware();
+    // int[] lost = {2, 6};
+    // int[] reserve = {2, 6};
+    // System.out.println(s.solution(7, lost, reserve));
+
+    NewIdRecommend id = new NewIdRecommend();
+    //bat.y.abcdefghi
+    System.out.println(id.solution("1...!@BaT#*..y.abcdefghijklm"));
     
   }
 }
