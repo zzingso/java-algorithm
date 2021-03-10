@@ -1,5 +1,7 @@
 import java.util.PriorityQueue;
 
+// https://programmers.co.kr/learn/courses/30/lessons/42748
+
 class KNumber {
     public int[] solution(int[] array, int[][] commands) {
         int[] answer = new int[commands.length];
