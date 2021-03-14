@@ -29,8 +29,8 @@ class Main {
       }
     }
 
-    int selectedFile = sc.nextInt();
-    System.out.println(fileList.get(selectedFile - 1).getName());
+    // int selectedFile = sc.nextInt();
+    // System.out.println(fileList.get(selectedFile - 1).getName());
 
 
     //FindPrimeNumber f = new FindPrimeNumber();
@@ -46,8 +46,9 @@ class Main {
     // System.out.println(s.solution(7, lost, reserve));
 
     //NewIdRecommend id = new NewIdRecommend();
-    //bat.y.abcdefghi
-    //System.out.println(id.solution("1...!@BaT#*..y.abcdefghijklm"));
+    //System.out.println(id.solution("...!@BaT#*..y.abcdefghijklm"));
     
+    // StringCompression sc = new StringCompression();
+    // sc.solution("");
   }
 }
