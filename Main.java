@@ -48,7 +48,7 @@ class Main {
     //NewIdRecommend id = new NewIdRecommend();
     //System.out.println(id.solution("...!@BaT#*..y.abcdefghijklm"));
     
-    // StringCompression sc = new StringCompression();
+    // c sc = new StringCompression();
     // sc.solution("");
   }
 }

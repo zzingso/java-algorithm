@@ -11,28 +11,59 @@
 class NewIdRecommend {
     public String solution(String new_id) {
         String answer = "";
-        String tempId = new_id.toLowerCase();
+        char[] charArray = new_id.toLowerCase().toCharArray();
 
-        for(String s : tempId.split("")) {
-          //System.out.println(s);
-
-          Character c = s.charAt(0);
-          System.out.println(Character.isDigit(c));
-          
+        int dotCount = 0;
+        for(char c : charArray) {
           if(
-            Character.isLowerCase(c) == false && 
-            Character.isDigit(c) == false &&
-            c != '-' && c != '_' && c != '.'
+            Character.isLowerCase(c) == true || 
+            Character.isDigit(c) == true ||
+            c == '-' || c == '_' || c == '.'
           ) {
-            tempId.replace(String.valueOf(c), "");
-            System.out.println(tempId);
+            if(c == '.') {
+              if(dotCount == 0) {
+                answer += c;
+              }
+              dotCount++;
+            } else {
+              dotCount = 0;
+              answer += c;
+            }
           }
-          //System.out.println(c);
-          //if(c == '-' || c == '_' || c == '.') {
-            //System.out.println(true);
-          //}
+        }  
+
+        if(answer.startsWith(".")) {
+          answer = answer.substring(1);
         }
-        //System.out.println(tempId);
+
+        if(answer.endsWith(".")) {
+          answer = answer.substring(0, answer.length()-1);
+        }
+
+        if("".equals(answer)) {
+          answer = "a";
+        }
+
+        if(answer.length() > 15) {
+          answer = answer.substring(0, 15);
+        }
+
+        if(answer.endsWith(".")) {
+          answer = answer.substring(0, answer.length()-1);
+        }
+
+        if(answer.length() <= 2) {
+          int length = answer.length();
+          String appendStr = answer.substring(length-1, length);
+
+          while(true) {
+            answer = answer.concat(appendStr);
+            if(answer.length() == 3) {
+              break;
+            }
+          }
+        }
+        
         return answer;
     }
 }

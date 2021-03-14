@@ -2,7 +2,7 @@ import java.util.Calendar;
 
 // https://programmers.co.kr/learn/courses/30/lessons/12901
 
-class 2016 {
+class Year2016 {
   public String solution(int m, int d) {
     Calendar c = Calendar.getInstance();
 		int year = 2016;
